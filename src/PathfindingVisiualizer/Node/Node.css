@@ -1,0 +1,80 @@
+.node {
+    width: 25px;
+    height: 25px;
+    outline: 1px solid rgb(100, 100, 100);
+    display: inline-block;
+  }
+  
+  .node-finish {
+    background-color: #d9534f; /* Alizarin Crimson */
+  }
+  
+  .node-start {
+    background-color: #5cb85c; /* Emerald */
+  }
+  
+  .node-visited {
+    animation-name: visitedAnimation;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-delay: 0;
+    animation-direction: alternate;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+  }
+  
+  @keyframes visitedAnimation {
+    0% {
+      transform: scale(0.3);
+      background-color: rgba(192, 57, 43, 0.75); /* Pomegranate */
+      border-radius: 50%;
+    }
+  
+    50% {
+      background-color: rgba(52, 152, 219, 0.75); /* Peter River */
+    }
+  
+    75% {
+      transform: scale(1.2);
+      background-color: rgba(46, 204, 113, 0.75); /* Emerald */
+    }
+  
+    100% {
+      transform: scale(1);
+      background-color: rgba(230, 126, 34, 0.75); /* Carrot */
+    }
+  }
+  
+  .node-wall {
+    background-color: #34495e; /* Wet Asphalt */
+  }
+  
+  .node-shortest-path {
+    animation-name: shortestPath;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-delay: 0;
+    animation-direction: alternate;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+  }
+  
+  @keyframes shortestPath {
+    0% {
+      transform: scale(0.6);
+      background-color: #3498db; /* Belize Hole */
+    }
+  
+    50% {
+      transform: scale(1.2);
+      background-color: #3498db; /* Belize Hole */
+    }
+  
+    100% {
+      transform: scale(1);
+      background-color: #3498db; /* Belize Hole */
+    }
+  }
+  
